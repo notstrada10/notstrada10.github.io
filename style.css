@@ -1,0 +1,56 @@
+body {
+    background-color: #9c9c9c; /* Sostituisci con il colore grigio desiderato */
+}
+
+/* Stile per il tuo pulsante */
+button {
+    background-color: #007BFF; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    border: none; /* Rimuovi il bordo */
+    padding: 10px 20px; /* Spaziatura interna */
+    border-radius: 5px; /* Bordo arrotondato */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+/* Stile al passaggio del mouse */
+button:hover {
+    background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+button {
+    border: 2px solid #007BFF; /* Aggiungi un bordo */
+    /* Altri stili come sopra */
+}
+
+button {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Aggiungi un'ombra */
+    /* Altri stili come sopra */
+}
+
+button {
+    background: linear-gradient(to bottom, #007BFF, #0056b3); /* Sfondo con gradiente */
+    /* Altri stili come sopra */
+}
+
+/* Stili per le etichette delle informazioni del vinile */
+.label {
+    font-weight: bold; /* Testo in grassetto */
+    margin-right: 5px; /* Margine a destra per separare l'etichetta dal testo */
+}
+
+/* Stili per il tuo pulsante personalizzato */
+.custom-button {
+    background: linear-gradient(to bottom, #007BFF, #0056b3); /* Sfondo con gradiente */
+    color: white; /* Colore del testo */
+    border: 2px solid #007BFF; /* Bordo */
+    padding: 10px 20px; /* Spaziatura interna */
+    border-radius: 5px; /* Bordo arrotondato */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Ombra */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+    transition: background-color 0.3s; /* Animazione del colore di sfondo */
+}
+
+/* Stile al passaggio del mouse */
+.custom-button:hover {
+    background-color: #0056b3; /* Cambia il colore di sfondo al passaggio del mouse */
+}

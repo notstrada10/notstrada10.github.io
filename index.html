@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <title>Il Tuo Sito</title>
+    <style>
+        h1 {
+            font-weight: bold;
+        }
+    </style>
+    <script src="script.js"></script>
+    <title>My Vinyl Collection</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My (Street) Vinyl Collection:</h1>
+    <main>
+        <h2>Here's the catalogue</h2>
+        <ul id = "vinyl-list">
+            <div class="vinyl-item"> 
+            </div>
+        </ul>
+    </main>
+    <form id="vinyl-form">
+        <label class="label" for="artist">Artista:</label>
+        <input type="text" id="artist" name="artist" required>
+
+        <label class="label" for="title">Titolo:</label>
+        <input type="text" id="title" name="title" required>
+
+        <label class="label" for="year">Anno di Uscita:</label>
+        <input type="number" id="year" name="year" required>
+
+        <label class="label" for="condition">Condizione:</label>
+        <input type="text" id="condition" name="condition" required>
+
+        <label class="label" for="image">URL dell'Immagine:</label>
+        <input type="text" id="image" name="image" required>
+
+        <label class="label" for="codex">Label:</label>
+        <input type="text" id="codex" name="codex" required>
+    
+        <button type="button" id="add-vinyl-button">Aggiungi Vinile</button>
+    </form>
+    
+    <div id="edit-form-container" style="display: none;">
+        <h2>Modifica Vinile</h2>
+        <form id="edit-form">
+            <label for="edit-artist">Artista:</label>
+            <input type="text" id="edit-artist" name="edit-artist" required>
+
+            <label for="edit-title">Titolo:</label>
+            <input type="text" id="edit-title" name="edit-title" required>
+
+            <label for="edit-year">Anno di Uscita:</label>
+            <input type="number" id="edit-year" name="edit-year" required>
+
+            <label for="edit-condition">Condizione:</label>
+            <input type="text" id="edit-condition" name="edit-condition" required>
+
+            <label for="edit-image">URL dell'Immagine:</label>
+            <input type="text" id="edit-image" name="edit-image" required>
+
+            <label for="edit-codex">Label</label>
+            <input type="text" id="edit-codex" name="edit-codex" required>
+
+            <button type="button" id="save-edit-button">Salva Modifiche</button>
+        </form>
+    </div>
+
+    <!-- Elenco dei vinili -->
+    <div id="vinyl-list">
+        <!-- Gli elementi saranno aggiunti dinamicamente qui -->
+    </div>
+     
+</body>
+</html>
