@@ -148,4 +148,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Inizializza l'elenco dei vinili all'avvio
     updateVinylList();
+
+    const showFormButton = document.getElementById('show-form-button');
+        const vinylForm1 = document.getElementById('vinyl-form');
+        const addVinylButton1 = document.getElementById('add-vinyl-button');
+
+        showFormButton.addEventListener('click', () => {
+            vinylForm.style.display = 'block';
+        });
+
+        addVinylButton.addEventListener('click', () => {
+            // Recupera i dati inseriti nel modulo
+            const artist = document.getElementById('artist').value;
+            const title = document.getElementById('title').value;
+            const year = document.getElementById('year').value;
+            const condition = document.getElementById('condition').value;
+            const image = document.getElementById('image').value;
+            const codex = document.getElementById('codex').value;
+
+            // Esegui qui la logica per aggiungere il vinile o fare altro con i dati
+
+            // Resetta il modulo e nascondilo
+            document.getElementById('vinyl-add-form').reset();
+            vinylForm.style.display = 'none';
+        });
 });
+
+
